@@ -11,8 +11,9 @@ app.use(bodyParser.json());
 // routes
 
 // add an animal to the herd with specific ID
-app.post('/animal/:id', (req, res) => {
+app.post('/animal', (req, res) => {
   console.log('now adding animal...');
+  res.send('successfully added');
 })
 
 // add animal weight (floating point num) and weigh date (a date and time)
@@ -27,9 +28,9 @@ app.get('/animal', (req, res) => {
 })
 
 // return estimated total animal weight
-app.get('animal/:weighDateAndTime' (req, res) => {
-  console.log('here are all the animals weight at specific time');
-})
+// app.get('animal/:weighDateAndTime' (req, res) => {
+//   console.log('here are all the animals weight at specific time');
+// })
 
 
 
