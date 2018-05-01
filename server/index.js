@@ -29,12 +29,14 @@ app.post('/animal/:id/:weight', (req, res) => {
 
 // list all animals and weight records
 app.get('/animal', (req, res) => {
-  console.log('here is the list');
+  console.log('weight list');
+  // query for all animals and their most recent weight record
+  // db.query(`SELECT a.animalID  `);
 })
 
-// return estimated total animal weight
-// app.get('animal/:weighDateAndTime' (req, res) => {
-//   console.log('here are all the animals weight at specific time');
+// return estimated total animal weight at specific date?
+app.get('animal/:weighDateAndTime' (req, res) => {
+  console.log('estimated weight');
 // })
 
 

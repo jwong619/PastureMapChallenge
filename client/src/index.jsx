@@ -54,7 +54,8 @@ class App extends React.Component {
     })
   }
 
-  //
+  // decide input design and layout later
+  // lets first work off hte data that we should get
 
   render() {
     return (<div>
